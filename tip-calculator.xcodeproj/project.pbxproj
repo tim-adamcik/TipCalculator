@@ -25,6 +25,10 @@
 		BA78695829F82ED70087914E /* BillInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78695729F82ED70087914E /* BillInputView.swift */; };
 		BA78695A29F82F050087914E /* TipInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78695929F82F050087914E /* TipInputView.swift */; };
 		BA78695C29F82F210087914E /* SplitInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78695B29F82F210087914E /* SplitInputView.swift */; };
+		BA78695F29F837A20087914E /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78695E29F837A20087914E /* ThemeColor.swift */; };
+		BA78696129F837B00087914E /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78696029F837B00087914E /* ThemeFont.swift */; };
+		BA78696429F837CE0087914E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78696329F837CE0087914E /* UIColor+Extension.swift */; };
+		BA78696729F83BEC0087914E /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78696629F83BEC0087914E /* LabelFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		BA78695729F82ED70087914E /* BillInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInputView.swift; sourceTree = "<group>"; };
 		BA78695929F82F050087914E /* TipInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipInputView.swift; sourceTree = "<group>"; };
 		BA78695B29F82F210087914E /* SplitInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitInputView.swift; sourceTree = "<group>"; };
+		BA78695E29F837A20087914E /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
+		BA78696029F837B00087914E /* ThemeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFont.swift; sourceTree = "<group>"; };
+		BA78696329F837CE0087914E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		BA78696629F83BEC0087914E /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,9 @@
 		BA5C30C929F736C3008E5219 /* tip-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				BA78696529F83BDD0087914E /* Factory */,
+				BA78696229F837BA0087914E /* Extensions */,
+				BA78695D29F837900087914E /* config */,
 				BA78695229F82DAE0087914E /* View */,
 				BA5C30CA29F736C3008E5219 /* AppDelegate.swift */,
 				BA5C30CC29F736C3008E5219 /* SceneDelegate.swift */,
@@ -163,6 +174,31 @@
 				BA78695B29F82F210087914E /* SplitInputView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BA78695D29F837900087914E /* config */ = {
+			isa = PBXGroup;
+			children = (
+				BA78695E29F837A20087914E /* ThemeColor.swift */,
+				BA78696029F837B00087914E /* ThemeFont.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		BA78696229F837BA0087914E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA78696329F837CE0087914E /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA78696529F83BDD0087914E /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				BA78696629F83BEC0087914E /* LabelFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,10 +349,14 @@
 			files = (
 				BA5C30CF29F736C3008E5219 /* CalculatorVC.swift in Sources */,
 				BA78695429F82DC30087914E /* LogoView.swift in Sources */,
+				BA78695F29F837A20087914E /* ThemeColor.swift in Sources */,
+				BA78696429F837CE0087914E /* UIColor+Extension.swift in Sources */,
 				BA78695829F82ED70087914E /* BillInputView.swift in Sources */,
 				BA78695629F82EBD0087914E /* ResultView.swift in Sources */,
 				BA5C30CB29F736C3008E5219 /* AppDelegate.swift in Sources */,
+				BA78696129F837B00087914E /* ThemeFont.swift in Sources */,
 				BA5C30CD29F736C3008E5219 /* SceneDelegate.swift in Sources */,
+				BA78696729F83BEC0087914E /* LabelFactory.swift in Sources */,
 				BA78695C29F82F210087914E /* SplitInputView.swift in Sources */,
 				BA78695A29F82F050087914E /* TipInputView.swift in Sources */,
 			);
