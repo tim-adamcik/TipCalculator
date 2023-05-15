@@ -30,6 +30,8 @@
 		BA78696429F837CE0087914E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78696329F837CE0087914E /* UIColor+Extension.swift */; };
 		BA78696729F83BEC0087914E /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78696629F83BEC0087914E /* LabelFactory.swift */; };
 		BA8E36232A128FB60058CBCE /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E36222A128FB60058CBCE /* UIView+extension.swift */; };
+		BA8E36252A1299460058CBCE /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E36242A1299460058CBCE /* AmountView.swift */; };
+		BA8E36272A12A2180058CBCE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E36262A12A2170058CBCE /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		BA78696329F837CE0087914E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		BA78696629F83BEC0087914E /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
 		BA8E36222A128FB60058CBCE /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		BA8E36242A1299460058CBCE /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
+		BA8E36262A12A2170058CBCE /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +175,9 @@
 			children = (
 				BA78695329F82DC30087914E /* LogoView.swift */,
 				BA78695529F82EBD0087914E /* ResultView.swift */,
+				BA8E36242A1299460058CBCE /* AmountView.swift */,
 				BA78695729F82ED70087914E /* BillInputView.swift */,
+				BA8E36262A12A2170058CBCE /* HeaderView.swift */,
 				BA78695929F82F050087914E /* TipInputView.swift */,
 				BA78695B29F82F210087914E /* SplitInputView.swift */,
 			);
@@ -350,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8E36252A1299460058CBCE /* AmountView.swift in Sources */,
 				BA5C30CF29F736C3008E5219 /* CalculatorVC.swift in Sources */,
 				BA78695429F82DC30087914E /* LogoView.swift in Sources */,
 				BA78695F29F837A20087914E /* ThemeColor.swift in Sources */,
@@ -359,6 +366,7 @@
 				BA78695629F82EBD0087914E /* ResultView.swift in Sources */,
 				BA5C30CB29F736C3008E5219 /* AppDelegate.swift in Sources */,
 				BA78696129F837B00087914E /* ThemeFont.swift in Sources */,
+				BA8E36272A12A2180058CBCE /* HeaderView.swift in Sources */,
 				BA5C30CD29F736C3008E5219 /* SceneDelegate.swift in Sources */,
 				BA78696729F83BEC0087914E /* LabelFactory.swift in Sources */,
 				BA78695C29F82F210087914E /* SplitInputView.swift in Sources */,
