@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Combine
 
 class CalculatorVC: UIViewController {
 
@@ -15,6 +16,10 @@ class CalculatorVC: UIViewController {
     private let billInputView = BillInputView()
     private let tipInputView = TipInputView()
     private let splitInputView = SplitInputLogoView()
+    
+    private let vm = CalculatorVM()
+    private var cancellables = Set<AnyCancellable>()
+    
     
     private lazy var vStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
@@ -34,6 +39,7 @@ class CalculatorVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         layout()
+        bind()
     }
 
     private func layout() {
@@ -66,6 +72,21 @@ class CalculatorVC: UIViewController {
         splitInputView.snp.makeConstraints({ make in
             make.height.equalTo(56)
         })
+    }
+    
+    private func bind() {
+        
+        let input = CalculatorVM.Input(billPublisher: Just(10).eraseToAnyPublisher(), tipPublisher: Just(.tenPercent).eraseToAnyPublisher(), splitPublisher: Just(5).eraseToAnyPublisher())
+        let output = vm.transform(input: input)
+        
+        output.updateViewPublisher.sink { result in
+            print()
+            print("amt pp = \(result.amountPerPerson)")
+            print("total bill = \(result.totalBill)")
+            print("tip = \(result.totalTip)")
+            print()
+
+        }.store(in: &cancellables)
     }
 
 }
