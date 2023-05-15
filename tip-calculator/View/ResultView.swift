@@ -31,21 +31,25 @@ class ResultView: UIView {
     
     private lazy var hStackView: UIStackView = {
         let view = UIStackView(arrangedSubviews: [
-
+            AmountView(),
+            UIView(),
+            AmountView()
         ])
-        view.axis = .vertical
-        view.spacing = -4
-        view.alignment = .center
+        view.axis = .horizontal
+        view.distribution = .fillEqually
         return view
     }()
     
     private lazy var vStackView: UIStackView = {
         let view = UIStackView(arrangedSubviews: [
-
+            headerLabel,
+            amountPerPersonLabel,
+            horizontalLineView,
+            buildSpacerView(height: 0),
+            hStackView
         ])
         view.axis = .vertical
-        view.spacing = -4
-        view.alignment = .center
+        view.spacing = 8
         return view
     }()
     
@@ -59,6 +63,40 @@ class ResultView: UIView {
     }
     
     private func layout() {
-        backgroundColor = .gray
+        backgroundColor = .white
+        addSubview(vStackView)
+        vStackView.snp.makeConstraints { make in
+            make.top.equalTo(snp.top).offset(24)
+            make.leading.equalTo(snp.leading).offset(24)
+            make.trailing.equalTo(snp.trailing).offset(-24)
+            make.bottom.equalTo(snp.bottom).offset(-24)
+        }
+        horizontalLineView.snp.makeConstraints { make in
+            make.height.equalTo(2)
+        }
+        
+        addShadow(offset: CGSize(width: 0, height: 3), color: .black, radius: 12, opacity: 0.1)
+    }
+    
+    private func buildSpacerView(height: CGFloat) -> UIView {
+        let view = UIView()
+        view.heightAnchor.constraint(equalToConstant: height).isActive = true
+        return view
+    }
+}
+
+class AmountView: UIView {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        layout()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func layout() {
+        backgroundColor = .red
     }
 }

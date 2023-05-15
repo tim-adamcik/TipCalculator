@@ -29,6 +29,7 @@
 		BA78696129F837B00087914E /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78696029F837B00087914E /* ThemeFont.swift */; };
 		BA78696429F837CE0087914E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78696329F837CE0087914E /* UIColor+Extension.swift */; };
 		BA78696729F83BEC0087914E /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78696629F83BEC0087914E /* LabelFactory.swift */; };
+		BA8E36232A128FB60058CBCE /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E36222A128FB60058CBCE /* UIView+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		BA78696029F837B00087914E /* ThemeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFont.swift; sourceTree = "<group>"; };
 		BA78696329F837CE0087914E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		BA78696629F83BEC0087914E /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
+		BA8E36222A128FB60058CBCE /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				BA78696329F837CE0087914E /* UIColor+Extension.swift */,
+				BA8E36222A128FB60058CBCE /* UIView+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				BA78695429F82DC30087914E /* LogoView.swift in Sources */,
 				BA78695F29F837A20087914E /* ThemeColor.swift in Sources */,
 				BA78696429F837CE0087914E /* UIColor+Extension.swift in Sources */,
+				BA8E36232A128FB60058CBCE /* UIView+extension.swift in Sources */,
 				BA78695829F82ED70087914E /* BillInputView.swift in Sources */,
 				BA78695629F82EBD0087914E /* ResultView.swift in Sources */,
 				BA5C30CB29F736C3008E5219 /* AppDelegate.swift in Sources */,
