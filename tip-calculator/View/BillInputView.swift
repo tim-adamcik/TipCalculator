@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import Combine
+import CombineCocoa
 
 class BillInputView: UIView {
     
@@ -51,13 +53,27 @@ class BillInputView: UIView {
         return textField
     }()
     
+    private var cancellables = Set<AnyCancellable>()
+    private let billSubject: PassthroughSubject<Double, Never> = .init()
+    var valuePublisher: AnyPublisher<Double, Never> {
+        return billSubject.eraseToAnyPublisher()
+    }
+    
     init() {
         super.init(frame: .zero)
         layout()
+        observe()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func observe() {
+        textField.textPublisher.sink { [unowned self] text in
+            billSubject.send(text?.doubleValue ?? 0)
+            print("Text: \(text)")
+        }.store(in: &cancellables)
     }
     
     private func layout() {
@@ -84,7 +100,7 @@ class BillInputView: UIView {
         }
         
         textField.snp.makeConstraints { make in
-            make.top.trailing.bottom.equalToSuperview()
+            make.top.bottom.equalToSuperview()
             make.leading.equalTo(currencyDenominationLabel.snp.trailing).offset(16)
             make.trailing.equalTo(textFieldContainerView.snp.trailing).offset(-16)
         }
