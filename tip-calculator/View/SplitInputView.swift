@@ -87,6 +87,10 @@ class SplitInputLogoView: UIView {
         }
     }
     
+    func reset() {
+        splitSubject.send(1)
+    }
+    
     private func observe() {
         splitSubject.sink { [unowned self] quantity in
             quantityLabel.text = quantity.stringValue
