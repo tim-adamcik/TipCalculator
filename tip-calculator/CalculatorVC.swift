@@ -96,7 +96,8 @@ class CalculatorVC: UIViewController {
         
         let input = CalculatorVM.Input(billPublisher: billInputView.valuePublisher,
                                        tipPublisher: tipInputView.valuePublisher,
-                                       splitPublisher: splitInputView.valuePublisher)
+                                       splitPublisher: splitInputView.valuePublisher,
+                                       logoViewTapPublisher: logoViewTapPublisher)
         let output = vm.transform(input: input)
         
         output.updateViewPublisher.sink { [unowned self] result in
