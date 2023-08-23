@@ -20,6 +20,7 @@ class TipInputView: UIView {
     
     private lazy var tenPercentButton: UIButton = {
         let button = buildTipButton(tip: .tenPercent)
+        button.accessibilityIdentifier = ScreenIdentifier.TipInputView.tenPercentButton.rawValue
         button.tapPublisher.flatMap({
             Just(Tip.tenPercent)
         }).assign(to: \.value, on: tipSubject).store(in: &cancellables)
@@ -28,6 +29,7 @@ class TipInputView: UIView {
     
     private lazy var fifteenPercentButton: UIButton = {
         let button = buildTipButton(tip: .fifteenPercent)
+        button.accessibilityIdentifier = ScreenIdentifier.TipInputView.fifteenPercentButton.rawValue
         button.tapPublisher.flatMap({
             Just(Tip.fifteenPercent)
         }).assign(to: \.value, on: tipSubject).store(in: &cancellables)
@@ -36,6 +38,7 @@ class TipInputView: UIView {
     
     private lazy var twentyPercentButton: UIButton = {
         let button = buildTipButton(tip: .twentyPercent)
+        button.accessibilityIdentifier = ScreenIdentifier.TipInputView.twentyPercentButton.rawValue
         button.tapPublisher.flatMap({
             Just(Tip.twentyPercent)
         }).assign(to: \.value, on: tipSubject).store(in: &cancellables)
@@ -61,6 +64,7 @@ class TipInputView: UIView {
         button.backgroundColor = ThemeColor.primary
         button.tintColor = .white
         button.addCornerRadius(radius: 8.0)
+        button.accessibilityIdentifier = ScreenIdentifier.TipInputView.customPercentButton.rawValue
         button.tapPublisher.sink { [weak self] _ in
             self?.handleCustomTipButton()
         }.store(in: &cancellables)
@@ -121,6 +125,7 @@ class TipInputView: UIView {
                 textfield.placeholder = "Make it generous"
                 textfield.keyboardType = .numberPad
                 textfield.autocorrectionType = .no
+                textfield.accessibilityIdentifier = ScreenIdentifier.TipInputView.customTipAlertTextField.rawValue
             }
             
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
