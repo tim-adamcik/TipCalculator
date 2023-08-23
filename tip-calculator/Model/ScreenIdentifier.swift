@@ -16,7 +16,25 @@ enum ScreenIdentifier {
     }
     
     enum BillInputView: String {
-        case billInput
+        case textField
+    }
+    
+    enum TipInputView: String {
+        case tenPercentButton
+        case fifteenPercentButton
+        case twentyPercentButton
+        case customPercentButton
+        case customTipAlertTextField
+    }
+    
+    enum SplitInputView: String {
+        case decrementButton
+        case incrementButton
+        case quantityValueLabel
+    }
+    
+    enum LogoView: String {
+        case logoView
     }
     
 }
