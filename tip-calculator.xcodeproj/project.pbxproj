@@ -17,12 +17,14 @@
 		BA5C30D729F736C3008E5219 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5C30D529F736C3008E5219 /* LaunchScreen.storyboard */; };
 		BA5C30E229F736C4008E5219 /* tip_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5C30E129F736C4008E5219 /* tip_calculatorTests.swift */; };
 		BA5C30EC29F736C4008E5219 /* tip_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5C30EB29F736C4008E5219 /* tip_calculatorUITests.swift */; };
-		BA5C30EE29F736C4008E5219 /* tip_calculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5C30ED29F736C4008E5219 /* tip_calculatorUITestsLaunchTests.swift */; };
 		BA5C30FC29F73787008E5219 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BA5C30FB29F73787008E5219 /* CombineCocoa */; };
 		BA5C30FF29F737B1008E5219 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BA5C30FE29F737B1008E5219 /* SnapKit */; };
 		BA5C310229F737DE008E5219 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BA5C310129F737DE008E5219 /* CombineCocoa */; };
 		BA5C310529F73816008E5219 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = BA5C310429F73816008E5219 /* SnapshotTesting */; };
 		BA5C310729F7382C008E5219 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BA5C310629F7382C008E5219 /* CombineCocoa */; };
+		BA60DE4F2A966437006976B6 /* ScreenIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60DE4E2A966437006976B6 /* ScreenIdentifier.swift */; };
+		BA60DE502A966437006976B6 /* ScreenIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60DE4E2A966437006976B6 /* ScreenIdentifier.swift */; };
+		BA60DE522A9665DC006976B6 /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60DE512A9665DC006976B6 /* CalculatorScreen.swift */; };
 		BA610DB82A965CDB007BAC67 /* tip_calculator_snapshot_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA610DB72A965CDB007BAC67 /* tip_calculator_snapshot_test.swift */; };
 		BA78695429F82DC30087914E /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78695329F82DC30087914E /* LogoView.swift */; };
 		BA78695629F82EBD0087914E /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78695529F82EBD0087914E /* ResultView.swift */; };
@@ -76,7 +78,8 @@
 		BA5C30E129F736C4008E5219 /* tip_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calculatorTests.swift; sourceTree = "<group>"; };
 		BA5C30E729F736C4008E5219 /* tip-calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tip-calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5C30EB29F736C4008E5219 /* tip_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calculatorUITests.swift; sourceTree = "<group>"; };
-		BA5C30ED29F736C4008E5219 /* tip_calculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BA60DE4E2A966437006976B6 /* ScreenIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenIdentifier.swift; sourceTree = "<group>"; };
+		BA60DE512A9665DC006976B6 /* CalculatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
 		BA610DB72A965CDB007BAC67 /* tip_calculator_snapshot_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calculator_snapshot_test.swift; sourceTree = "<group>"; };
 		BA78695329F82DC30087914E /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		BA78695529F82EBD0087914E /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
@@ -183,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				BA5C30EB29F736C4008E5219 /* tip_calculatorUITests.swift */,
-				BA5C30ED29F736C4008E5219 /* tip_calculatorUITestsLaunchTests.swift */,
+				BA60DE512A9665DC006976B6 /* CalculatorScreen.swift */,
 			);
 			path = "tip-calculatorUITests";
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			children = (
 				BA8E36292A12C3BD0058CBCE /* Tip.swift */,
 				BA8E362E2A12D89B0058CBCE /* Result.swift */,
+				BA60DE4E2A966437006976B6 /* ScreenIdentifier.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -423,6 +427,7 @@
 				BA8E362D2A12D2FA0058CBCE /* CalculatorVM.swift in Sources */,
 				BA42606C2A153705000B260E /* UIResponder+Extension.swift in Sources */,
 				BA42606E2A153D5B000B260E /* Int+Extension.swift in Sources */,
+				BA60DE4F2A966437006976B6 /* ScreenIdentifier.swift in Sources */,
 				BA8E36252A1299460058CBCE /* AmountView.swift in Sources */,
 				BA8E362A2A12C3BD0058CBCE /* Tip.swift in Sources */,
 				BA5C30CF29F736C3008E5219 /* CalculatorVC.swift in Sources */,
@@ -458,8 +463,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA5C30EE29F736C4008E5219 /* tip_calculatorUITestsLaunchTests.swift in Sources */,
+				BA60DE502A966437006976B6 /* ScreenIdentifier.swift in Sources */,
 				BA5C30EC29F736C4008E5219 /* tip_calculatorUITests.swift in Sources */,
+				BA60DE522A9665DC006976B6 /* CalculatorScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
