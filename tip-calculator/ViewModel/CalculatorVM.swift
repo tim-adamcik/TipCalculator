@@ -37,7 +37,7 @@ class CalculatorVM {
     private func getTipAmount(bill: Double, tip: Tip) -> Double {
         switch tip {
         case .none:
-            return bill
+            return 0
         case .tenPercent:
             return bill * 0.1
         case .fifteenPercent:

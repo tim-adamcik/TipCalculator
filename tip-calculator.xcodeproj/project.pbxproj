@@ -38,6 +38,7 @@
 		BA8E362A2A12C3BD0058CBCE /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E36292A12C3BD0058CBCE /* Tip.swift */; };
 		BA8E362D2A12D2FA0058CBCE /* CalculatorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E362C2A12D2FA0058CBCE /* CalculatorVM.swift */; };
 		BA8E362F2A12D89B0058CBCE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E362E2A12D89B0058CBCE /* Result.swift */; };
+		BABA55CE2A961C7E0015584C /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA55CD2A961C7E0015584C /* Double+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		BA8E36292A12C3BD0058CBCE /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		BA8E362C2A12D2FA0058CBCE /* CalculatorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorVM.swift; sourceTree = "<group>"; };
 		BA8E362E2A12D89B0058CBCE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		BABA55CD2A961C7E0015584C /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				BA78696329F837CE0087914E /* UIColor+Extension.swift */,
+				BABA55CD2A961C7E0015584C /* Double+Extension.swift */,
 				BA8E36222A128FB60058CBCE /* UIView+extension.swift */,
 				BA4260692A152484000B260E /* String+Extension.swift */,
 				BA42606B2A153705000B260E /* UIResponder+Extension.swift */,
@@ -406,6 +409,7 @@
 				BA42606A2A152484000B260E /* String+Extension.swift in Sources */,
 				BA5C30CB29F736C3008E5219 /* AppDelegate.swift in Sources */,
 				BA78696129F837B00087914E /* ThemeFont.swift in Sources */,
+				BABA55CE2A961C7E0015584C /* Double+Extension.swift in Sources */,
 				BA8E36272A12A2180058CBCE /* HeaderView.swift in Sources */,
 				BA5C30CD29F736C3008E5219 /* SceneDelegate.swift in Sources */,
 				BA78696729F83BEC0087914E /* LabelFactory.swift in Sources */,
